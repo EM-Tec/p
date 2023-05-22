@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網棧</title>
+    <link rel="stylesheet" href="link.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        body {
+            background-color: #c4cdd9;
+            font-family: 'Noto Sans TC', serif;
+            padding: 1rem;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 1rem;
+        }
+
+        /* create a big square material design button list */
+        a {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 250px;
+            min-width: 30vh;
+            background-color: #3f51b5;
+            color: #fff;
+            text-decoration: none;
+            margin: 1rem;
+            border-radius: 1rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:active {
+            background-color: #6a79d9;
+        }
+
+        a:hover {
+            width: 300px;
+            font-size: 1.2em;
+            background-color: #4c5cc2;
+
+        }
+
+        .bg {
+            background-image: url(webpallet.png);
+            width: 50vmin;
+            height: 50vmin;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background-size: cover;
+        }
+
+        img {
+            width: 50%;
+            margin: 1rem 0;
+        }
+
+        h3 {
+            margin-bottom: 1rem;
+            white-space: nowrap;
+        }
+
+        @media screen and (max-width: 800px) {
+            section {
+                flex-wrap: wrap;
+            }
+
+            a {
+                height: 30vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- a*5{連結$} -->
+    <main>
+        <h1>網棧</h1>
+        <p>歡迎來到網棧。這是毛哥EM資訊密技的全新系列，我們將討論各種網頁設計的技術與技巧</p>
+        <section>
+            <a href="https://em-tec.github.io/series/%E7%B6%B2%E6%A3%A7/">
+                <h3>毛哥EM資訊密技</h3><img src="https://em-tec.github.io/icons/EMprofile.png" alt="">
+            </a>
+            <a href="https://www.youtube.com/@webpallet">
+                <h3>YouTube</h3><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="">
+            </a>
+            <a href="https://podcasts.apple.com/podcast/1688488172">
+                <h3>Apple Podcast</h3><img src="https://host.soundon.fm/d2c4e848b5b01eef0f0eb83469852be1.svg" alt="">
+            </a>
+            <a href="https://open.spotify.com/show/7zKHxZqpWmAH2vL2DzpEaH">
+                <h3>Spotify</h3><img src="https://host.soundon.fm/53a8fc1009a0c4269a67da84a90514ed.svg" alt="">
+            </a>
+            <a href="">
+                <h3>Google Podcast</h3><img src="https://host.soundon.fm/2ecbc6cbadebf2be3a31b213032b505f.svg" alt="">
+            </a>
+            <a href="">
+                <h3>MixerBox</h3><img src="https://host.soundon.fm/9f062f93cdecd6fe2163377c55d45d50.svg" alt="">
+            </a>
+            <a href="https://podcast.kkbox.com/tw/channel/KkkknH8kret9QYLlIr">
+                <h3>KKBOX Podcast</h3><img src="https://host.soundon.fm/1865401931d74309ed187e9e988a2e4d.svg" alt="">
+            </a>
+            <a href="https://www.mymusic.net.tw/podcast/rsschannel/44422">
+                <h3>MyMusic</h3><img src="https://host.soundon.fm/3efb51b6221592d81904f176dba9be6c.svg" alt="">
+            </a>
+            <a href="https://player.soundon.fm/p/130b275c-706a-4c19-85f1-742f4bca1bb8">
+                <h3>SoundOn</h3><img src="https://host.soundon.fm/bd891a6ae79f304ecb13e43cb92877fd.svg" alt="">
+            </a>
+
+        </section>
+    </main>
+    <div class="bg"></div>
+</body>
+
+</html>
