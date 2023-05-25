@@ -24,10 +24,28 @@
         }
 
         section {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            display: grid;
+            grid-gap: 20px;
+            max-width: 980px;
+            margin: 2rem auto;
+            
         }
+
+        @media (min-width: 768px) {
+            section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            img{
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            section {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
 
         h1 {
             font-size: 3rem;
@@ -40,15 +58,12 @@
             flex-direction: column-reverse;
             justify-content: center;
             align-items: center;
-            width: 250px;
-            height: 250px;
-            min-width: 30vh;
             background-color: #3f51b5;
             color: #fff;
             text-decoration: none;
-            margin: 1rem;
             border-radius: 1rem;
             transition: all 0.3s ease-in-out;
+            padding: 1rem;
         }
 
         a:active {
@@ -56,7 +71,6 @@
         }
 
         a:hover {
-            width: 300px;
             font-size: 1.2em;
             background-color: #4c5cc2;
 
@@ -74,7 +88,7 @@
         }
 
         img {
-            width: 50%;
+            width: 20%;
             margin: 1rem 0;
         }
 
